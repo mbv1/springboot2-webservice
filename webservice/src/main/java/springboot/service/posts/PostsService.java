@@ -52,10 +52,10 @@ public class PostsService {
                 .collect(toList());
     }
 
-    @Transactional(readOnly = true)
-    public Page<PostsListResponseDto> search(PostsSearchCondition condition, Pageable pageable) {
-        return postsRepository.search(condition, pageable);
-    }
+//    @Transactional(readOnly = true)
+//    public Page<PostsListResponseDto> search(PostsSearchCondition condition, Pageable pageable) {
+//        return postsRepository.search(condition, pageable);
+//    }
 
     @Transactional
     public void delete(Long id) {

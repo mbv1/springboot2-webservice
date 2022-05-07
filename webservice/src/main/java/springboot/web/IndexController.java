@@ -25,14 +25,14 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model, @LoginUser SessionUser user, PostsSearchCondition condition, Pageable pageable) {
-      //  model.addAttribute("posts", postsService.findAllDesc());
+        model.addAttribute("posts", postsService.findAllDesc());
         if (user != null) {
             model.addAttribute("userName", user.getName());
         }
-        Page<PostsListResponseDto> result = postsService.search(condition, pageable);
-        model.addAttribute("posts", result);
-        model.addAttribute("previous", result.getPageable().previousOrFirst().getPageNumber());
-        model.addAttribute("next", result.getPageable().next().getPageNumber());
+        //Page<PostsListResponseDto> result = postsService.search(condition, pageable);
+        //model.addAttribute("posts", result);
+        //model.addAttribute("previous", result.getPageable().previousOrFirst().getPageNumber());
+      //  model.addAttribute("next", result.getPageable().next().getPageNumber());
 
         return "index";
     }

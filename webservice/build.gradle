@@ -11,6 +11,10 @@ plugins {
     id 'java'
 }
 
+jar {
+    enabled = false
+}
+
 group 'com.spring.book'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
@@ -47,9 +51,7 @@ test {
     useJUnitPlatform()
 }
 
-jar {
-    enabled = false
-}
+
 //
 //def querydslDir = "$buildDir/generated/querydsl"
 //

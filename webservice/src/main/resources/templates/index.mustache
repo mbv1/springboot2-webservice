@@ -14,19 +14,19 @@
                     <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
                 {{/userName}}
             </div>
-            <div class="form-group col-md-2">
-                <select class="form-select" id="option-box" aria-label="Default select example">
-                    <option value="title" selected>제목</option>
-                    <option value="content">내용</option>
-                    <option value="author">작성자</option>
-                </select>
-            </div>
-            <div class="col-md-3">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <input name="keyword" id="keyword" type="text" placeholder="검색어를 입력해주세요">
-                        <button class="btn btn-secondary" id="search-posts">검색</button>
-                    </div>
-            </div>
+<!--            <div class="form-group col-md-2">-->
+<!--                <select class="form-select" id="option-box" aria-label="Default select example">-->
+<!--                    <option value="title" selected>제목</option>-->
+<!--                    <option value="content">내용</option>-->
+<!--                    <option value="author">작성자</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="col-md-3">-->
+<!--                    <div class="btn-group" role="group" aria-label="Basic example">-->
+<!--                        <input name="keyword" id="keyword" type="text" placeholder="검색어를 입력해주세요">-->
+<!--                        <button class="btn btn-secondary" id="search-posts">검색</button>-->
+<!--                    </div>-->
+<!--            </div>-->
         </div>
         <br>
         <!--목록 영역-->
@@ -50,14 +50,14 @@
             {{/posts}}
             </tbody>
         </table>
-        <ul class="pagination justify-content-center">
-            <li class="page-item">
-                <a class="page-link" href="/?page={{previous}}">Previous</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="?page={{next}}">Next</a>
-            </li>
-        </ul>
+<!--        <ul class="pagination justify-content-center">-->
+<!--            <li class="page-item">-->
+<!--                <a class="page-link" href="/?page=">Previous</a>-->
+<!--            </li>-->
+<!--            <li class="page-item">-->
+<!--                <a class="page-link" href="?page=">Next</a>-->
+<!--            </li>-->
+<!--        </ul>-->
     </div>
 </div>
 {{>layout/footer}}
